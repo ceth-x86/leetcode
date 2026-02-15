@@ -4,6 +4,7 @@
 
 | # | Problem | Topics |
 |---|---------|--------|
+| 1 | [Two Sum](../0001_two_sum/) | Array, Hash Table |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Array, Hash Table |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Hash Table, String, Sorting |
 

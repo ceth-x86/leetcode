@@ -6,6 +6,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 
 | # | Problem | Difficulty | Topics | Solution |
 |---|---------|------------|--------|----------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | [Solution](0001_two_sum/) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | [Solution](0242_valid_anagram/) |
 
