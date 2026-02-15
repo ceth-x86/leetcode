@@ -8,6 +8,9 @@ Repository for interview preparation by solving LeetCode problems. Each problem 
 leetcode/
 ├── CLAUDE.md
 ├── README.md                    # Index of all solved problems with links
+├── indexes/
+│   ├── difficulty.md            # Problems grouped by difficulty
+│   └── topics.md               # Problems grouped by topic
 └── NNNN_problem_slug/           # e.g. 0217_contains_duplicate/
     ├── README.md                # Problem statement + detailed solution
     ├── python/
@@ -100,4 +103,6 @@ The root `README.md` is an index of all solved problems:
 3. Implement solution in all five languages with tests
 4. Write `README.md` per language with features, decisions, and run instructions
 5. Add Python visualization
-5. Update root `README.md` with the new problem entry
+6. Update root `README.md` with the new problem entry
+7. Update `indexes/difficulty.md` with the new problem
+8. Update `indexes/topics.md` with the new problem (a problem may appear in multiple topics)

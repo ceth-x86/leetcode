@@ -2,6 +2,8 @@
 
 Interview preparation — each problem solved in Python, C++, Go, Rust, and Clojure with detailed explanations.
 
+**Browse by:** [Difficulty](indexes/difficulty.md) | [Topic](indexes/topics.md)
+
 | # | Problem | Difficulty | Topics | Solution |
 |---|---------|------------|--------|----------|
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |
