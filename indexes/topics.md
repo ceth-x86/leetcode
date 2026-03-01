@@ -28,3 +28,16 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
+| 392 | [Is Subsequence](../0392_is_subsequence/) | Easy |
+
+## Two Pointers
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 392 | [Is Subsequence](../0392_is_subsequence/) | Easy |
+
+## Dynamic Programming
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 392 | [Is Subsequence](../0392_is_subsequence/) | Easy |

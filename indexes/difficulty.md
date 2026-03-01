@@ -7,6 +7,7 @@
 | 1 | [Two Sum](../0001_two_sum/) | Array, Hash Table |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Array, Hash Table |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Hash Table, String, Sorting |
+| 392 | [Is Subsequence](../0392_is_subsequence/) | Two Pointers, String, Dynamic Programming |
 | 1299 | [Replace Elements with Greatest Element on Right Side](../1299_replace_elements_with_greatest_element_on_right_side/) | Array |
 
 ## Medium
