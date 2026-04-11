@@ -81,6 +81,10 @@ Each problem directory `README.md` must include:
 5. Complexity analysis with justification.
 6. Edge cases and how the solution handles them.
 
+If a problem directory contains multiple solution subdirectories, the problem-level `README.md` must cover each solution variant explicitly. At minimum, the `Approach`, `Step-by-Step Walkthrough`, `Call Trace`, and `Complexity Analysis` sections should include separate subsections for every solution directory. Prefer a fully symmetric structure, for example `Hash Set Approach`, `Hash Set Walkthrough`, `Hash Set Call Trace`, `Hash Set Complexity`, and the corresponding parallel headings for every other solution variant.
+
+If a problem directory contains multiple solution subdirectories, the problem-level `README.md` must also include a comparison section that contrasts all proposed variants and highlights the pros, cons, and practical tradeoffs of each approach.
+
 ## Language-Level README Requirements
 
 Each language subdirectory `README.md` inside a solution directory should cover:

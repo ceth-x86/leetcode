@@ -5,6 +5,7 @@
 | # | Problem | Topics |
 |---|---------|--------|
 | 1 | [Two Sum](../0001_two_sum/) | Array, Hash Table |
+| 58 | [Length of Last Word](../0058_length_of_last_word/) | String |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Array, Hash Table |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Hash Table, String, Sorting |
 | 392 | [Is Subsequence](../0392_is_subsequence/) | Two Pointers, String, Dynamic Programming |
@@ -12,7 +13,9 @@
 
 ## Medium
 
-_No problems yet._
+| # | Problem | Topics |
+|---|---------|--------|
+| 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | String, Hash Table, Bit Manipulation, Rolling Hash |
 
 ## Hard
 

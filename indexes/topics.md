@@ -13,6 +13,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 1 | [Two Sum](../0001_two_sum/) | Easy |
+| 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
 
@@ -27,8 +28,22 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 58 | [Length of Last Word](../0058_length_of_last_word/) | Easy |
+| 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
 | 392 | [Is Subsequence](../0392_is_subsequence/) | Easy |
+
+## Bit Manipulation
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
+
+## Rolling Hash
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 
 ## Two Pointers
 

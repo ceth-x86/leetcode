@@ -7,6 +7,8 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 | # | Problem | Difficulty | Topics | Solution |
 |---|---------|------------|--------|----------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | [Solution](0001_two_sum/) |
+| 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solution](0058_length_of_last_word/) |
+| 187 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | String, Hash Table, Bit Manipulation, Rolling Hash | [Solution](0187_repeated_dna_sequences/) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | [Solution](0242_valid_anagram/) |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Two Pointers, String, Dynamic Programming | [Solution](0392_is_subsequence/) |
@@ -14,7 +16,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 
 ## Running Tests
 
-All commands are run from the problem's language subdirectory (e.g. `0217_contains_duplicate/python/`).
+All commands are run from a solution's language subdirectory (e.g. `0187_repeated_dna_sequences/rolling_hash/python/`).
 
 **Python** (pytest)
 ```bash
