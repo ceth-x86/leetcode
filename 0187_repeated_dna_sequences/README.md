@@ -35,10 +35,11 @@ Output: ["AAAAAAAAAA"]
 
 ## Approach
 
-This directory contains two solution variants:
+This directory contains three solution variants:
 
 - `hash_set/` scans every length-10 window and stores substrings directly.
-- `rolling_hash/` encodes each window into 20 bits and slides that encoding across the string.
+- `rolling_hash/` encodes each window into 20 bits while building the rolling value on the fly.
+- `bitmask/` uses the explicit bit-manipulation derivation: precompute 2-bit values, build the first window once, then update later windows in constant time with shifts and bitmasks.
 
 ### Hash Set Approach
 
@@ -69,6 +70,25 @@ A 10-character window then fits in 20 bits. This lets us update the current wind
 3. Once the first 10 characters are processed, the encoded value uniquely identifies the current window.
 4. Track encoded windows in `seen`.
 5. When the same code appears again for the first time, append the corresponding substring to the answer.
+
+### Bitmask Approach
+
+**Idea:** This is the textbook bit-manipulation formulation of the same 2-bit encoding strategy. First convert the whole DNA string into integers `0/1/2/3`. Then:
+
+- build the first 10-letter window in `O(L)`,
+- slide the window in `O(1)` by shifting left,
+- append the new 2-bit value,
+- clear the oldest 2 bits with a bitmask.
+
+This makes the constant-time window update rule very explicit.
+
+**Algorithm:**
+
+1. If `len(s) <= 10`, return an empty list.
+2. Convert the string into an integer array using `A -> 0`, `C -> 1`, `G -> 2`, `T -> 3`.
+3. Build the first 20-bit window from the first 10 encoded values.
+4. For each later window, shift the bitmask left by 2, append the new encoded value, and clear the oldest 2 bits.
+5. Store seen bitmasks in a set, and add the corresponding substring to the answer set when a bitmask repeats.
 
 ## Step-by-Step Walkthrough
 
@@ -154,6 +174,58 @@ Final answer:
 ["AAAAAAAAAA"]
 ```
 
+### Bitmask Walkthrough
+
+#### Example 1: `s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"`
+
+Precompute:
+
+```text
+A -> 0, C -> 1, G -> 2, T -> 3
+nums = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, ...]
+```
+
+Then process windows:
+
+```text
+start 0  -> build first 20-bit window for "AAAAACCCCC" in O(L) -> add bitmask to seen
+start 1  -> shift left by 2, append code for s[10], clear oldest 2 bits -> "AAAACCCCCA"
+start 2  -> shift/update again -> "AAACCCCCAA"
+...
+start 10 -> bitmask now represents "AAAAACCCCC" again -> already in seen, add substring to output
+...
+start 16 -> bitmask now represents "CCCCCAAAAA" again -> already in seen, add substring to output
+```
+
+Final answer:
+
+```text
+["AAAAACCCCC", "CCCCCAAAAA"]
+```
+
+#### Example 2: `s = "AAAAAAAAAAAAA"`
+
+The encoded array is all zeros:
+
+```text
+nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+```
+
+So:
+
+```text
+start 0 -> build first window -> bitmask 0 -> add to seen
+start 1 -> shift/add/clear -> still bitmask 0 -> add "AAAAAAAAAA" to output
+start 2 -> shift/add/clear -> still bitmask 0 -> already in output
+start 3 -> shift/add/clear -> still bitmask 0 -> already in output
+```
+
+Final answer:
+
+```text
+["AAAAAAAAAA"]
+```
+
 ## Call Trace
 
 ### Hash Set Call Trace
@@ -218,6 +290,43 @@ findRepeatedDnaSequences("AAAAAAAAAAAAA")
 └── result = ["AAAAAAAAAA"]
 ```
 
+### Bitmask Call Trace
+
+For the bitmask approach on `s = "AAAAAAAAAAAAA"`:
+
+```text
+findRepeatedDnaSequences("AAAAAAAAAAAAA")
+│
+├── convert string to nums:
+│   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+│
+├── start=0:
+│   build first 10-letter window in O(L)
+│   bitmask = 0
+│   add 0 to seen
+│
+├── start=1:
+│   bitmask <<= 2
+│   bitmask |= nums[10] = 0
+│   clear oldest 2 bits
+│   bitmask = 0
+│   already in seen
+│   add "AAAAAAAAAA" to output
+│
+├── start=2:
+│   same update
+│   bitmask = 0
+│   already seen
+│   output already contains "AAAAAAAAAA"
+│
+├── start=3:
+│   same update
+│   bitmask = 0
+│   already seen
+│
+└── result = ["AAAAAAAAAA"]
+```
+
 ## Complexity Analysis
 
 ### Hash Set Complexity
@@ -229,6 +338,11 @@ findRepeatedDnaSequences("AAAAAAAAAAAAA")
 
 - Time: `O(n)` because each step updates the 20-bit code in constant time and only slices the original string when a repeated window is first reported
 - Space: `O(n)` for the sets of encoded windows in the worst case
+
+### Bitmask Complexity
+
+- Time: `O(n)` because the first window costs `O(L)` once and every later window update is `O(1)`
+- Space: `O(n)` for the seen bitmasks and repeated substrings
 
 ## Solution Comparison
 
@@ -260,10 +374,25 @@ findRepeatedDnaSequences("AAAAAAAAAAAAA")
 - More implementation detail: encoding, masking, and rolling updates all need to be correct
 - Easier to introduce subtle bugs than in the substring-based approach
 
+### Bitmask Comparison
+
+**Pros:**
+
+- Closest to the standard editorial-style bit-manipulation derivation
+- Makes the constant-time window update rule explicit: build once, then shift, append, and clear bits
+- Useful when you want to teach or study exactly how the bitmask formula works
+
+**Cons:**
+
+- Very similar in asymptotic behavior to `rolling_hash/`, so the extra variant adds conceptual overlap
+- Slightly more verbose because it precomputes `nums` and treats the first window as a special case
+- Still more complex than the direct `hash_set/` solution
+
 ### When To Prefer Which
 
 - Prefer `hash_set/` when clarity, maintainability, and interview readability matter most.
-- Prefer `rolling_hash/` when you want the more optimized and technically interesting version that reduces per-window overhead.
+- Prefer `rolling_hash/` when you want the streamlined encoded-window version with minimal inner-loop overhead.
+- Prefer `bitmask/` when you want the same encoded-window idea, but written in the more explicit bit-manipulation style often shown in editorials and explanations.
 
 ## Edge Cases
 
