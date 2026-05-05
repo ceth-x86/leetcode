@@ -5,6 +5,7 @@
 | # | Problem | Topics |
 |---|---------|--------|
 | 1 | [Two Sum](../0001_two_sum/) | Array, Hash Table |
+| 14 | [Longest Common Prefix](../0014_longest_common_prefix/) | String |
 | 58 | [Length of Last Word](../0058_length_of_last_word/) | String |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Array, Hash Table |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Hash Table, String, Sorting |

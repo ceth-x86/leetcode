@@ -30,6 +30,7 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 14 | [Longest Common Prefix](../0014_longest_common_prefix/) | Easy |
 | 58 | [Length of Last Word](../0058_length_of_last_word/) | Easy |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
