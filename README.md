@@ -8,6 +8,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 |---|---------|------------|--------|----------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | [Solution](0001_two_sum/) |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String | [Solution](0014_longest_common_prefix/) |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Hash Table, String, Sorting | [Solution](0049_group_anagrams/) |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solution](0058_length_of_last_word/) |
 | 187 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | String, Hash Table, Bit Manipulation, Rolling Hash | [Solution](0187_repeated_dna_sequences/) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |

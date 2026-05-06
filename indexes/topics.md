@@ -15,6 +15,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 1 | [Two Sum](../0001_two_sum/) | Easy |
+| 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
@@ -23,6 +24,7 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
 
@@ -31,6 +33,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 14 | [Longest Common Prefix](../0014_longest_common_prefix/) | Easy |
+| 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 58 | [Length of Last Word](../0058_length_of_last_word/) | Easy |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |

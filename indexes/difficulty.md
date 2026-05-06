@@ -17,6 +17,7 @@
 
 | # | Problem | Topics |
 |---|---------|--------|
+| 49 | [Group Anagrams](../0049_group_anagrams/) | Hash Table, String, Sorting |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | String, Hash Table, Bit Manipulation, Rolling Hash |
 
 ## Hard
