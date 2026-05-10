@@ -7,6 +7,7 @@
 | 1 | [Two Sum](../0001_two_sum/) | Easy |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 239 | [Sliding Window Maximum](../0239_sliding_window_maximum/) | Hard |
+| 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Medium |
 | 1299 | [Replace Elements with Greatest Element on Right Side](../1299_replace_elements_with_greatest_element_on_right_side/) | Easy |
 | 3903 | [Smallest Stable Index I](../3903_smallest_stable_index_i/) | Easy |
 
@@ -19,6 +20,7 @@
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
+| 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Medium |
 
 ## Sorting
 
@@ -27,6 +29,7 @@
 | 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Easy |
+| 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Medium |
 
 ## String
 
@@ -74,6 +77,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 239 | [Sliding Window Maximum](../0239_sliding_window_maximum/) | Hard |
+| 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Medium |
 
 ## Monotonic Queue
 

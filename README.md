@@ -14,6 +14,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue | [Solution](0239_sliding_window_maximum/) |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | [Solution](0242_valid_anagram/) |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | Array, Hash Table, Sorting, Heap (Priority Queue), Bucket Sort | [Solution](0347_top_k_frequent_elements/) |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | Two Pointers, String, Dynamic Programming | [Solution](0392_is_subsequence/) |
 | 1299 | [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | Easy | Array | [Solution](1299_replace_elements_with_greatest_element_on_right_side/) |
 | 3903 | [Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/) | Easy | Array | [Solution](3903_smallest_stable_index_i/) |
