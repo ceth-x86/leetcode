@@ -1,6 +1,6 @@
 # LeetCode Interview Prep
 
-Repository for interview preparation by solving LeetCode problems. Each problem is solved in five languages: Python, C++, Go, Rust, and Clojure.
+Repository for interview preparation by solving LeetCode problems. Each problem is solved in six languages: Python, C++, Go, Rust, Clojure, and Kotlin.
 
 ## Project Structure
 
@@ -31,10 +31,14 @@ leetcode/
     │   ├── Cargo.toml
     │   └── src/
     │       └── lib.rs           # Solution + #[cfg(test)] tests
-    └── clojure/
+    ├── clojure/
+    │   ├── README.md            # Language-specific notes
+    │   ├── src/solution.clj
+    │   └── test/solution_test.clj
+    └── kotlin/
         ├── README.md            # Language-specific notes
-        ├── src/solution.clj
-        └── test/solution_test.clj
+        ├── solution.kt
+        └── solution_test.kt
 ```
 
 ## README.md Format (per problem)
@@ -84,6 +88,11 @@ This file does NOT duplicate the problem statement or algorithm explanation from
 - Tests: `clojure.test`
 - Prefer pure functions and functional composition
 
+### Kotlin
+- Idiomatic Kotlin: `IntArray`, arrays, lists, maps, sets, `getOrPut`, `withIndex`, `maxOf`, `minOf`, null-safe APIs
+- Tests: `main` function with standard `check` assertions unless a Kotlin test framework is introduced later
+- Compile and run tests with `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar`
+
 ## README.md Format
 
 The root `README.md` is an index of all solved problems:
@@ -100,7 +109,7 @@ The root `README.md` is an index of all solved problems:
 
 1. Create problem directory: `NNNN_problem_slug/` (e.g. `0217_contains_duplicate/`)
 2. Write `README.md` with problem statement and full solution explanation
-3. Implement solution in all five languages with tests
+3. Implement solution in all six languages with tests
 4. Write `README.md` per language with features, decisions, and run instructions
 5. Add Python visualization
 6. Update root `README.md` with the new problem entry

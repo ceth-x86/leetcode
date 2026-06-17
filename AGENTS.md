@@ -8,13 +8,14 @@ These instructions apply to the entire repository.
 
 ## Repository Purpose
 
-This repository is for interview preparation through LeetCode problems. Each problem is solved in five languages:
+This repository is for interview preparation through LeetCode problems. Each problem is solved in six languages:
 
 - Python
 - C++
 - Go
 - Rust
 - Clojure
+- Kotlin
 
 ## Expected Repository Structure
 
@@ -46,10 +47,14 @@ leetcode/
     │   │   ├── README.md
     │   │   ├── Cargo.toml
     │   │   └── src/lib.rs
-    │   └── clojure/
+    │   ├── clojure/
+    │   │   ├── README.md
+    │   │   ├── src/solution.clj
+    │   │   └── test/solution_test.clj
+    │   └── kotlin/
     │       ├── README.md
-    │       ├── src/solution.clj
-    │       └── test/solution_test.clj
+    │       ├── solution.kt
+    │       └── solution_test.kt
     └── sorting/
         └── ...
 ```
@@ -61,7 +66,7 @@ When adding a new problem, follow this sequence:
 1. Create a directory named `NNNN_problem_slug/`, for example `0217_contains_duplicate/`.
 2. Write the problem-level `README.md`.
 3. Create one or more solution subdirectories inside it, using logical names that explain the approach, for example `hash_set/`, `sorting/`, or `two_pointers/`.
-4. Inside each solution subdirectory, create the fixed language subdirectories: `python/`, `cpp/`, `go/`, `rust/`, and `clojure/`.
+4. Inside each solution subdirectory, create the fixed language subdirectories: `python/`, `cpp/`, `go/`, `rust/`, `clojure/`, and `kotlin/`.
 5. Implement the solution in each language using the local conventions.
 6. Add tests for each language.
 7. Add a language-specific `README.md` in each language directory.
@@ -128,6 +133,13 @@ Do not duplicate the problem statement or full algorithm explanation from the pr
 - Tests use `clojure.test`.
 - Favor pure functions and functional composition.
 
+### Kotlin
+
+- Prefer idiomatic Kotlin with `IntArray`, arrays, lists, maps, sets, helper classes where useful, null-safe APIs, and standard library functions such as `getOrPut`, `withIndex`, `maxOf`, and `minOf`.
+- Keep tests in `solution_test.kt` using a `main` function with standard `check` assertions unless the repository later adopts a Kotlin test framework.
+- Use `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar` as the default test command.
+- For additional Kotlin files such as follow-up variants, include separate test files and document the exact compile command in the Kotlin `README.md`.
+
 ## Root README Format
 
 The root [README.md](README.md) is the index of solved problems. Add each new problem as a table row in this format:
@@ -143,7 +155,7 @@ The root [README.md](README.md) is the index of solved problems. Add each new pr
 Before finishing work on a problem, verify that:
 
 - Every solution subdirectory uses a descriptive name that explains the approach.
-- Every solution subdirectory contains all five language directories.
+- Every solution subdirectory contains all six language directories.
 - Each implementation has tests.
 - Each language directory has its own `README.md`.
 - Every Python implementation includes `visualize.py`.

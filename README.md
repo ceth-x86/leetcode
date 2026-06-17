@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-Interview preparation — each problem solved in Python, C++, Go, Rust, and Clojure with detailed explanations.
+Interview preparation — each problem solved in Python, C++, Go, Rust, Clojure, and Kotlin with detailed explanations.
 
 **Browse by:** [Difficulty](indexes/difficulty.md) | [Topic](indexes/topics.md)
 
@@ -47,4 +47,9 @@ cargo test
 **Clojure** (clojure.test)
 ```bash
 clj -M -e "(require '[clojure.test :refer [run-tests]]) (load-file \"src/solution.clj\") (load-file \"test/solution_test.clj\") (run-tests 'solution-test)"
+```
+
+**Kotlin** (standard `check` assertions)
+```bash
+kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar
 ```

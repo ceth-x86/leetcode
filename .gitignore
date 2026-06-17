@@ -17,6 +17,11 @@ go.sum
 # Clojure
 .cpcache/
 .nrepl-port
+.lsp
+.clj-kondo
+
+# Kotlin
+**/kotlin/*.jar
 
 # IDE
 .idea/
