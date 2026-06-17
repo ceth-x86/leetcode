@@ -7,6 +7,7 @@
 | 1 | [Two Sum](../0001_two_sum/) | Array, Hash Table |
 | 14 | [Longest Common Prefix](../0014_longest_common_prefix/) | String |
 | 58 | [Length of Last Word](../0058_length_of_last_word/) | String |
+| 121 | [Best Time to Buy and Sell Stock](../0121_best_time_to_buy_and_sell_stocks/) | Array, Dynamic Programming |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Array, Hash Table |
 | 242 | [Valid Anagram](../0242_valid_anagram/) | Hash Table, String, Sorting |
 | 392 | [Is Subsequence](../0392_is_subsequence/) | Two Pointers, String, Dynamic Programming |

@@ -10,6 +10,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | String | [Solution](0014_longest_common_prefix/) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Hash Table, String, Sorting | [Solution](0049_group_anagrams/) |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solution](0058_length_of_last_word/) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, Dynamic Programming | [Solution](0121_best_time_to_buy_and_sell_stocks/) |
 | 187 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | String, Hash Table, Bit Manipulation, Rolling Hash | [Solution](0187_repeated_dna_sequences/) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table | [Solution](0217_contains_duplicate/) |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue | [Solution](0239_sliding_window_maximum/) |
@@ -21,7 +22,7 @@ Interview preparation — each problem solved in Python, C++, Go, Rust, and Cloj
 
 ## Running Tests
 
-All commands are run from a solution's language subdirectory (e.g. `0187_repeated_dna_sequences/rolling_hash/python/`).
+All commands are run from a solution's language subdirectory (e.g. `0121_best_time_to_buy_and_sell_stocks/one_pass/python/`).
 
 **Python** (pytest)
 ```bash

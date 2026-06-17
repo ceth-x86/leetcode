@@ -6,7 +6,7 @@ __pycache__/
 # C++
 *.o
 *.out
-*/cpp/solution
+**/cpp/solution
 
 # Go
 go.sum

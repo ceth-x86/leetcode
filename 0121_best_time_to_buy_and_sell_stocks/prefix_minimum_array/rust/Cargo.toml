@@ -1,0 +1,4 @@
+[package]
+name = "best-time-to-buy-and-sell-stock-prefix-minimum-array"
+version = "0.1.0"
+edition = "2021"

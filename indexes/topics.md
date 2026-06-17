@@ -5,6 +5,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 1 | [Two Sum](../0001_two_sum/) | Easy |
+| 121 | [Best Time to Buy and Sell Stock](../0121_best_time_to_buy_and_sell_stocks/) | Easy |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
 | 239 | [Sliding Window Maximum](../0239_sliding_window_maximum/) | Hard |
 | 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Medium |
@@ -89,4 +90,5 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 121 | [Best Time to Buy and Sell Stock](../0121_best_time_to_buy_and_sell_stocks/) | Easy |
 | 392 | [Is Subsequence](../0392_is_subsequence/) | Easy |
