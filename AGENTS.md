@@ -137,7 +137,7 @@ Do not duplicate the problem statement or full algorithm explanation from the pr
 
 - Prefer idiomatic Kotlin with `IntArray`, arrays, lists, maps, sets, helper classes where useful, null-safe APIs, and standard library functions such as `getOrPut`, `withIndex`, `maxOf`, and `minOf`.
 - Keep tests in `solution_test.kt` using a `main` function with standard `check` assertions unless the repository later adopts a Kotlin test framework.
-- Use `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar` as the default test command.
+- Use `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && kotlin solution.jar` as the default test command.
 - For additional Kotlin files such as follow-up variants, include separate test files and document the exact compile command in the Kotlin `README.md`.
 
 ## Root README Format

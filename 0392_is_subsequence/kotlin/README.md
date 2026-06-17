@@ -16,6 +16,6 @@
 ## Running Tests
 
 ```bash
-kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar
-kotlinc solution_followup.kt solution_followup_test.kt -include-runtime -d solution_followup.jar && java -jar solution_followup.jar
+kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && kotlin solution.jar
+kotlinc solution_followup.kt solution_followup_test.kt -include-runtime -d solution_followup.jar && kotlin solution_followup.jar
 ```

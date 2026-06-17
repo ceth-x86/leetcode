@@ -17,6 +17,7 @@
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 1 | [Two Sum](../0001_two_sum/) | Easy |
+| 3 | [Longest Substring Without Repeating Characters](../0003_longest_substring_without_repeating_characters/) | Medium |
 | 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | Medium |
 | 217 | [Contains Duplicate](../0217_contains_duplicate/) | Easy |
@@ -36,6 +37,7 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 3 | [Longest Substring Without Repeating Characters](../0003_longest_substring_without_repeating_characters/) | Medium |
 | 14 | [Longest Common Prefix](../0014_longest_common_prefix/) | Easy |
 | 49 | [Group Anagrams](../0049_group_anagrams/) | Medium |
 | 58 | [Length of Last Word](../0058_length_of_last_word/) | Easy |
@@ -71,6 +73,7 @@
 
 | # | Problem | Difficulty |
 |---|---------|------------|
+| 3 | [Longest Substring Without Repeating Characters](../0003_longest_substring_without_repeating_characters/) | Medium |
 | 239 | [Sliding Window Maximum](../0239_sliding_window_maximum/) | Hard |
 
 ## Heap (Priority Queue)

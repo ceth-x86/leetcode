@@ -91,7 +91,7 @@ This file does NOT duplicate the problem statement or algorithm explanation from
 ### Kotlin
 - Idiomatic Kotlin: `IntArray`, arrays, lists, maps, sets, `getOrPut`, `withIndex`, `maxOf`, `minOf`, null-safe APIs
 - Tests: `main` function with standard `check` assertions unless a Kotlin test framework is introduced later
-- Compile and run tests with `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && java -jar solution.jar`
+- Compile and run tests with `kotlinc solution.kt solution_test.kt -include-runtime -d solution.jar && kotlin solution.jar`
 
 ## README.md Format
 

@@ -18,6 +18,7 @@
 
 | # | Problem | Topics |
 |---|---------|--------|
+| 3 | [Longest Substring Without Repeating Characters](../0003_longest_substring_without_repeating_characters/) | Hash Table, String, Sliding Window |
 | 49 | [Group Anagrams](../0049_group_anagrams/) | Hash Table, String, Sorting |
 | 187 | [Repeated DNA Sequences](../0187_repeated_dna_sequences/) | String, Hash Table, Bit Manipulation, Rolling Hash |
 | 347 | [Top K Frequent Elements](../0347_top_k_frequent_elements/) | Array, Hash Table, Heap, Bucket Sort |
